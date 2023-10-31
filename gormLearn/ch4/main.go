@@ -51,7 +51,7 @@ func main() {
 
 	//You can specify batch size when creating with CreateInBatches
 	//一次批量提交有性能优势，但是SQL语句有长度限制，所以有如下的分批提交函数
-	db.CreateInBatches(&users, 2)
+	//db.CreateInBatches(&users, 2)
 
 	println(result.Error)        // 返回 error
 	println(result.RowsAffected) // 返回插入记录的条数
